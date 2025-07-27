@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const navStyle = {
   display: "flex",
@@ -26,28 +25,15 @@ const linkStyle = {
   position: "relative",
 };
 
-const activeLinkStyle = {
-  borderBottom: "2px solid #a11a1a",
-};
-
 function NavBar() {
   return (
     <nav style={navStyle}>
-      <NavLink
-        exact
-        to="/"
-        style={linkStyle}
-        activeStyle={activeLinkStyle}
-      >
+      <a href="#home" style={linkStyle}>
         Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        style={linkStyle}
-        activeStyle={activeLinkStyle}
-      >
+      </a>
+      <a href="#about" style={linkStyle}>
         About
-      </NavLink>
+      </a>
     </nav>
   );
 }
