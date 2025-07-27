@@ -35,7 +35,6 @@ function NavBar() {
     <nav style={navStyle}>
       <NavLink
         to="/"
-        end
         style={({ isActive }) => ({ ...linkStyle, ...(isActive ? activeLinkStyle : {}) })}
       >
         Home
