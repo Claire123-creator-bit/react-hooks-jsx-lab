@@ -34,14 +34,17 @@ function NavBar() {
   return (
     <nav style={navStyle}>
       <NavLink
+        exact
         to="/"
-        style={({ isActive }) => ({ ...linkStyle, ...(isActive ? activeLinkStyle : {}) })}
+        style={linkStyle}
+        activeStyle={activeLinkStyle}
       >
         Home
       </NavLink>
       <NavLink
         to="/about"
-        style={({ isActive }) => ({ ...linkStyle, ...(isActive ? activeLinkStyle : {}) })}
+        style={linkStyle}
+        activeStyle={activeLinkStyle}
       >
         About
       </NavLink>

@@ -23,7 +23,7 @@ function Home() {
           fontFamily: "serif",
         }}
       >
-        Liza is a Web Developer from<br />New York
+        Claire is a Web Developer from<br />Kenya
       </h1>
     </main>
   );
